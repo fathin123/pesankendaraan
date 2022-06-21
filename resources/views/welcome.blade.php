@@ -42,7 +42,6 @@
                             <span class="sr-only">Toggle navigation</span>
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="{{ url('/') }}">PESAN KENDARAAN</a>
                     </div>
                     <div class="collapse navbar-collapse" id="main-menu">
                         <ul class="nav navbar-nav navbar-right">
@@ -62,7 +61,7 @@
             <ul class="slides">
                 <li class="slide">
                     <div class="overlay"></div>
-                    <img src="assets/images/slide1.jpg" alt="">
+                    <img src="assets/images/p6.jpg" alt="">
                     <div class="slider-caption">
                         <div class="title">
                             <h2>PENDAFTARAN</h2>
@@ -78,12 +77,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <ul class="social">
-                        <li class="twitter"><a href="#" class="fa fa-twitter"></a></li>
-                        <li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
-                        <li class="rss"><a href="#" class="fa fa-rss"></a></li>
-                        <li class="linkedin"><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
                     <p>Copyright &copy; 2022 Fathin Naufaliya</p>
                 </div>
             </div>
