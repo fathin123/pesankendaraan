@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Mobil;
 use Illuminate\Http\Request;
 
@@ -27,7 +26,6 @@ class MobilController extends Controller
     {
         return view('mobils.create-mobil');
     }
-        
 
     /**
      * Store a newly created resource in storage.
@@ -37,7 +35,6 @@ class MobilController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
         Mobil::create([
             'nama' => $request->nama,
             'merk' => $request->merk,
@@ -45,7 +42,8 @@ class MobilController extends Controller
             'tahun' => $request->tahun,
         ]);
 
-        return redirect('data-mobil')->with('toast_success', 'Data Berhasil Tersimpan');
+        toast('Data Berhasil Tersimpan', 'success');
+        return redirect('data-mobil');
     }
 
     /**
@@ -56,7 +54,7 @@ class MobilController extends Controller
      */
     public function show($id)
     {
-        
+        //
     }
 
     /**
@@ -82,7 +80,8 @@ class MobilController extends Controller
     {
         $mob = Mobil::findorfail($id);
         $mob->update($request->all());
-        return redirect('data-mobil')->with('toast_success', 'Data Berhasil Update');
+        toast('Data Berhasil Update', 'success');
+        return redirect('data-mobil');
     }
 
     /**
@@ -95,7 +94,7 @@ class MobilController extends Controller
     {
         $mob = Mobil::findorfail($id);
         $mob->delete();
-        return back()->with('info','Data Berhasil Dihapus');
-
+        toast('Data Berhasil Dihapus', 'info');
+        return back();
     }
 }

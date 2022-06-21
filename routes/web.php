@@ -39,7 +39,7 @@ Route::group(['middeware' => ['auth','ceklevel:admin']], function() {
 Route::get('/data-mobil', [App\Http\Controllers\MobilController::class, 'index'])->name('data-mobil');
 Route::get('/create-mobil', [App\Http\Controllers\MobilController::class, 'create'])->name('create-mobil');
 Route::post('/simpan-mobil', [App\Http\Controllers\MobilController::class, 'store'])->name('simpan-mobil');
-Route::get('/edit-mobil/{id}', [App\Http\Controllers\MobilrController::class, 'edit'])->name('edit-mobil');
+Route::get('/edit-mobil/{id}', [App\Http\Controllers\MobilController::class, 'edit'])->name('edit-mobil');
 Route::post('/update-mobil{id}', [App\Http\Controllers\MobilController::class, 'update'])->name('update-mobil');
 Route::get('/delete-mobil/{id}', [App\Http\Controllers\MobilController::class, 'destroy'])->name('delete-mobil');
 

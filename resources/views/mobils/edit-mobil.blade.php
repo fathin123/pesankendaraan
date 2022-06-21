@@ -46,13 +46,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
         
         <div class="card-body">
-            <form action="{{ url ('update-mobil',$dok->id) }}" method="post">
+            <form action="{{ url ('update-mobil',$mob->id) }}" method="post">
               {{ csrf_field() }}
               <div class="form-group">
                 <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama Mobil" value="{{ $mob->nama }}">
               </div>
               <div class="form-group">
-                <input type="text" id="merk" name="merk" class="form-control" placeholder="Merk">{{ $mob->alamat }}
+                <input type="text" id="merk" name="merk" class="form-control" placeholder="Merk" value="{{ $mob->merk }}">
               </div>
               <div class="form-group">
                 <input type="text" id="warna" name="warna" class="form-control" placeholder="Warna" value="{{ $mob->warna }}">
