@@ -15,10 +15,11 @@ Terdapat 3 menu, yaitu:
 
 Dimana Menu Data Mobil, Menu Customer dan Menu Transaksi nantinya akan berelasi.
 
-### Data Mobil
 ![Screenshot](public/assets/images/db.png)
 
 ![Screenshot](public/assets/images/awal.png)
+
+### Data Mobil
 
 ![Screenshot](public/assets/images/mobil.png)
 
