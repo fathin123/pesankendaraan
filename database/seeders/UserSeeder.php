@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -15,10 +15,15 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'Administrator',
-            'email' => 'admin@admin.com',
-            'password' => Hash::make('password'),
+        User::truncate();
+        User::create([
+            'name' => 'Patin',
+            'level' => 'admin',
+            'email' => 'patin@admin.com',
+            'password' => bcrypt('admin'),
+            'nohp' => '081363884319',
+            'alamat' => 'sumberrejo',
+            'remember_token' => Str::random(60),
         ]);
     }
 }
