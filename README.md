@@ -13,8 +13,9 @@ Terdapat 3 menu, yaitu:
 2. Menu Customer
 3. Menu Transaksi
 
-Dimana Menu Customer dan Menu Transaksi nantinya akan berelasi.
+Dimana Menu Data Mobil, Menu Customer dan Menu Transaksi nantinya akan berelasi.
 
+### Data Mobil
 ![Screenshot](public/assets/images/db.png)
 
 ![Screenshot](public/assets/images/awal.png)
@@ -24,3 +25,17 @@ Dimana Menu Customer dan Menu Transaksi nantinya akan berelasi.
 ![Screenshot](public/assets/images/create-mobil.png)
 
 ![Screenshot](public/assets/images/mobil-berhasil.png)
+
+![Screenshot](public/assets/images/mobil-hapus.png)
+
+### Customer
+
+![Screenshot](public/assets/images/create-customer.png)
+
+![Screenshot](public/assets/images/customer.png)
+
+![Screenshot](public/assets/images/customer-berhasil.png)
+
+![Screenshot](public/assets/images/customer-update.png)
+
+![Screenshot](public/assets/images/customer-hapus.png)

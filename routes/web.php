@@ -43,12 +43,12 @@ Route::get('/edit-mobil/{id}', [App\Http\Controllers\MobilController::class, 'ed
 Route::post('/update-mobil{id}', [App\Http\Controllers\MobilController::class, 'update'])->name('update-mobil');
 Route::get('/delete-mobil/{id}', [App\Http\Controllers\MobilController::class, 'destroy'])->name('delete-mobil');
 
-Route::get('/data-jadwal', [App\Http\Controllers\JadwalController::class, 'index'])->name('data-jadwal');
-Route::get('/create-jadwal', [App\Http\Controllers\JadwalController::class, 'create'])->name('create-jadwal');
-Route::post('/simpan-jadwal', [App\Http\Controllers\JadwalController::class, 'store'])->name('simpan-jadwal');
-Route::get('/edit-jadwal/{id}', [App\Http\Controllers\JadwalController::class, 'edit'])->name('edit-jadwal');
-Route::post('/update-jadwal/{id}', [App\Http\Controllers\JadwalController::class, 'update'])->name('update-jadwal');
-Route::get('/delete-jadwal/{id}', [App\Http\Controllers\JadwalController::class, 'destroy'])->name('delete-jadwal');
+Route::get('/data-customer', [App\Http\Controllers\CustomerController::class, 'index'])->name('data-customer');
+Route::get('/create-customer', [App\Http\Controllers\CustomerController::class, 'create'])->name('create-customer');
+Route::post('/simpan-customer', [App\Http\Controllers\CustomerController::class, 'store'])->name('simpan-customer');
+Route::get('/edit-customer/{id}', [App\Http\Controllers\CustomerController::class, 'edit'])->name('edit-customer');
+Route::post('/update-customer/{id}', [App\Http\Controllers\CustomerController::class, 'update'])->name('update-customer');
+Route::get('/delete-customer/{id}', [App\Http\Controllers\CustomerController::class, 'destroy'])->name('delete-customer');
 
 Route::group(['middeware' => ['auth','ceklevel:user']], function() {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

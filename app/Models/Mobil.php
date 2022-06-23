@@ -16,10 +16,10 @@ class Mobil extends Model
     protected $fillable = [
         'id', 'nama', 'merk', 'warna', 'tahun'];
 
-    // public function jadwal()
-    // {
-    //     return $this->hasMany(Jadwal::class);
-    // }
+    public function customer()
+    {
+        return $this->hasMany(Customer::class);
+    }
 
     // public function penjadwalan()
     // {
