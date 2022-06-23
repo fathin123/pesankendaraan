@@ -79,7 +79,8 @@ class MobilController extends Controller
     public function update(Request $request, $id)
     {
         $mob = Mobil::findorfail($id);
-        $mob->update($request->all());
+        $mob->update($request->id());
+
         toast('Data Berhasil Update', 'success');
         return redirect('data-mobil');
     }
