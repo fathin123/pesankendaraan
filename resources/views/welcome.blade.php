@@ -64,7 +64,8 @@
                     <img src="assets/images/p6.jpg" alt="">
                     <div class="slider-caption">
                         <div class="title">
-                            <h2>PENDAFTARAN</h2>
+                            <h2>PEMESANAN</h2>
+                            <h2>KENDARAAN</h2>
                         </div>
                     </div>
                 </li>
