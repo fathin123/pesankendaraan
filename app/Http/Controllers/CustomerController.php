@@ -41,7 +41,7 @@ class CustomerController extends Controller
     {
         Customer::create([
             'nama' => $request->nama,
-            'nama_mobil' => $request->nama_mobil,
+            'id_mobil' => $request->id_mobil,
             'alamat' => $request->alamat,
             'nohp' => $request->nohp,
         ]);
@@ -69,8 +69,9 @@ class CustomerController extends Controller
      */
     public function edit($id)
     {
+        $mob = Mobil::all();
         $cst = Customer::findorfail($id);
-        return view('customers.edit-customer',compact('cst'));
+        return view('customers.edit-customer',compact('cst', 'mob'));
     }
 
     /**

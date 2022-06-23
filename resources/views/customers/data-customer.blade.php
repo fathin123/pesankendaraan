@@ -54,7 +54,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <tr>
                     <th>No.</th>
                     <th>Nama</th>
-                    <th>Nama Mobil</th>
+                    <th>Merk</th>
                     <th>Alamat</th>
                     <th>No Hp</th>
                     <th>Aksi</th>
@@ -63,7 +63,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $item->nama }}</td>
-                    <td>{{ $item->mobil->merk}}</td>
+                    <td>{{ $item->merk}}</td>
                     <td>{{ $item->alamat }}</td>
                     <td>{{ $item->nohp }}</td>
                     <td>

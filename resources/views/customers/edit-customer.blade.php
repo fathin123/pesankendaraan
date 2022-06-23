@@ -52,7 +52,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama" value="{{ $cst->nama }}">
               </div>
               <div class="form-group">
-                <input type="text" id="nama_mobil" name="nama_mobil" class="form-control" placeholder="Nama Mobil" value="{{ $cst->nama_mobil }}">
+              <select class="from-control select2" style="width: 100%;" name="merk" id="merk">
+                <option disabled value> Pilih Mobil</option>
+                @foreach ($mob as $item)
+                <option value="{{ $item->id}}">{{$item->merk}}</option>
+                @endforeach
+              </select>
               </div>
               <div class="form-group">
                 <input type="text" id="alamat" name="alamat" class="form-control" placeholder="Alamat" value="{{ $cst->alamat }}">

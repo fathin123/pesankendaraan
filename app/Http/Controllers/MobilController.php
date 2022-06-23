@@ -95,6 +95,7 @@ class MobilController extends Controller
     {
         $mob = Mobil::findorfail($id);
         $mob->delete();
+        
         toast('Data Berhasil Dihapus', 'info');
         return back();
     }
